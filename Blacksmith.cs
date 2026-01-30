@@ -36,7 +36,7 @@ namespace SWENG421_Lab3
             if (isUnavailable)
             {
                 if (delegatedPerformer == null)
-                    throw new InvalidOperationException("Blacksmith is unavailable, but no delegated TaskPerformer was assigned.");
+                    throw new InvalidOperationException("Blacksmith is unavailable !!!");
 
                 delegatedPerformer.Perform(task); //Delegation
                 return;

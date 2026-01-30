@@ -33,7 +33,7 @@ namespace SWENG421_Lab3
             if (isOutOfTown)
             {
                 if (delegatedSender == null)
-                    throw new InvalidOperationException("Owner is out of town, but no delegate MessageSender was assigned.");
+                    throw new InvalidOperationException("Owner is out of town !!!");
 
                 delegatedSender.Send(message, recipients);
             }

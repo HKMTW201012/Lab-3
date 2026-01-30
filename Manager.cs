@@ -39,7 +39,7 @@ namespace SWENG421_Lab3
             if (isOutOfTown)
             {
                 if (delegatedEvaluator == null)
-                    throw new InvalidOperationException("Manager is out of town, but no delegated Evaluator is assigned.");
+                    throw new InvalidOperationException("Manager is out of town !!!");
 
                 delegatedEvaluator.Evaluate(target, score); //Delegation
                 return;
