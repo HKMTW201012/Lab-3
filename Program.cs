@@ -44,21 +44,21 @@ namespace SWENG421_Lab3
 
  
             //Task 1: Craig sends "Good Job" to John, Jane, and Jack
-            Console.WriteLine("Scenario 1: Craig sends \"Good Job\" to John, Jane, and Jack");
+            Console.WriteLine("Task 1: Craig sends \"Good Job\" to John, Jane, and Jack");
 
             Employee[] receivers = { john, jane, jack };
             craig.Send("Good Job", receivers);
             Console.WriteLine();
 
             //Task 2: Greg performs his own task and helps Amy
-            Console.WriteLine("Scenario 2: Greg performs t1 and helps Amy with t2");
+            Console.WriteLine("Task 2: Greg performs t1 and helps Amy with t2");
 
             greg.Perform(t1);
             greg.Perform(t2);
             Console.WriteLine();
 
             //Task 3: Jane updates Greg's salary and helps Lin
-            Console.WriteLine("Scenario 3: Jane updates Greg's salary and helps Lin");
+            Console.WriteLine("Task 3: Jane updates Greg's salary and helps Lin");
 
             Console.WriteLine("Greg salary BEFORE: $" + greg.GetSalary());
             jane.UpdateSalary(greg, 1000m);
@@ -68,7 +68,7 @@ namespace SWENG421_Lab3
             Console.WriteLine();
 
             //Task 4: Normal evaluation
-            Console.WriteLine("Scenario 4: Normal evaluation");
+            Console.WriteLine("Task 4: Normal evaluation");
 
             john.Evaluate(jack, 3);
             mary.Evaluate(katie, 4);
@@ -76,7 +76,7 @@ namespace SWENG421_Lab3
 
 
             //Task 5: John is out of town, delegates evaluation to Craig
-            Console.WriteLine("Scenario 5: John is out of town -> delegates evaluation to Craig");
+            Console.WriteLine("Task 5: John is out of town -> delegates evaluation to Craig");
 
             //Mark John as unavailable
             john.SetAvailability(false);

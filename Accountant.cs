@@ -43,7 +43,7 @@ namespace SWENG421_Lab3
             if (isOutOfTown)
             {
                 if (delegatedUpdater == null)
-                    throw new InvalidOperationException("Accountant is unavailable, but no delegated SalaryUpdater is assigned.");
+                    throw new InvalidOperationException("Accountant is unavailable !!!");
 
                 delegatedUpdater.UpdateSalary(target, amount); //Delegation
                 return;
